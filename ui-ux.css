@@ -1,0 +1,189 @@
+@import url('./styles.css');
+@media screen and (min-width:320px)
+{
+    body{
+        background:#020202;
+    }
+
+    .navbar{
+        display:grid;
+        grid-template-columns:20% 80%;
+        width:100%;
+        background:#262626;
+    }
+
+    .navbar .heading{
+        display: block;
+        width: calc(100% - 40px);
+        padding: 16px 8px;
+        color: #ffffff;
+        padding-left: 32px;
+        letter-spacing: 4px;
+        font-size: 24px;
+        font-family: 'Lato','sans-serif';
+        font-weight: 600;
+    }
+
+    .navbar .links{
+        display:grid;
+        grid-template-columns: 6% 6%;
+        width: calc(100% - 16px);
+        padding:16px 8px;
+    }
+
+    .navbar .links .link{
+        color:#ffffff;
+        text-decoration: none;
+        font-family:'lato','sans-serif';
+    }
+
+    .navbar .links .link.active{
+        color:#FD693C;
+    }
+
+    .two-columns-section{
+        display:grid;
+        grid-template-columns: 20% 80%;
+        gap:16px;
+        width: calc(100% - 48px);
+        margin-top: 48px;
+        padding-left: 48px;
+    }
+
+    .two-columns-section .fixed-column{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:16px;
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0px;
+        background: #ffffff;
+        border-radius: 8px;
+    }
+
+    .fixed-column .img-container{
+        position: relative;
+        display: grid;
+        width: calc(100% - 32px);
+        height: 16vh;
+        justify-items: start;
+        padding-left: 16px;
+    }
+
+    .fixed-column .img-container img {
+        position: relative;
+        width: 150px;
+    }
+
+    .fixed-column .content {
+        width: calc(100% - 64px);
+        padding: 16px 32px;
+    }
+
+    .fixed-column .content h3{
+        font-family:'lato','sans-serif';
+        font-weight:800;
+        font-size:24px;
+        letter-spacing: 1.2px;
+        margin-bottom: 8px;
+    }
+
+    .fixed-column .content h6{
+        font-family:'lato','sans-serif';
+        font-weight:600;
+        font-size:20px;
+        line-height:1.2em;
+        color:#686868;
+        margin-bottom: 16px;
+    }
+    
+    .fixed-column .content p{
+        font-size:16px;
+        font-weight:600;
+        color:#212121;
+        font-family:'lato','sans-serif';
+        line-height: 1.2em;
+        margin-bottom:8px;
+    }
+
+    .scrollable-column {
+        display: grid;
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+        gap: 8px;
+        width: calc(100% - 40px);
+        height: calc(100vh - 264px );
+        padding: 0px 8px;
+        padding-right: 16px;
+        background:#020202;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .two-columns-section .scrollable-column .case-study-img-container{
+        display:block;
+        width: calc(100% - 32px);
+        padding:16px 8px;
+        border-radius:16px;
+        -webkit-border-radius:16px;
+        -moz-border-radius:16px;
+        -ms-border-radius:16px;
+        -o-border-radius:16px;
+}
+
+    .two-columns-section .scrollable-column .case-study-img-container img{
+        display:block;
+        width:100%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .footer{
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        display:grid;
+        grid-template-columns: 30% 1fr;
+        width: calc(100% - 96px);
+        padding: 16px 48px;
+        background: #262626;
+        justify-content:end;
+        align-content:end;
+    }
+
+    .footer .contact{
+        display:block;
+        width:100%;
+    }
+
+    .footer .contact h3, .footer .contact p, .footer .copyright-section p{
+        font-family:'lato','sans-serif';
+    }
+
+    .footer .contact h3 {
+        font-size: 24px;
+        font-weight:600;
+        color: #fbfbfb;
+        margin-bottom: 16px;
+    }
+
+    .footer .contact p{
+        margin-bottom:8px;
+    }
+
+    .footer .contact p, .footer .copyright-section p{
+        font-size:16px;
+        font-weight:400;
+        color:#e9e5e5;
+    }
+
+    .copyright-section {
+        display: grid;
+        align-items: end;
+    }
+    
+    .copyright-section p{
+        text-align: right;
+    }
+
+
+
+}
